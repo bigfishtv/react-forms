@@ -15,6 +15,6 @@ export withFormValue from './withFormValue';
 export Field from './Field';
 
 export function WithFormValue(...args) {
-  console.error('WithFormValue(..) is renamed to withFormValue(..)'); // eslint-disable-line no-console
+  console.warn('react-forms - Deprecation notice: WithFormValue(..) has been renamed to withFormValue(..)'); // eslint-disable-line no-console
   return withFormValue(...args);
 }
