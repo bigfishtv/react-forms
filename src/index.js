@@ -18,3 +18,8 @@ export function WithFormValue(...args) {
   console.warn('react-forms - Deprecation notice: WithFormValue(..) has been renamed to withFormValue(..)'); // eslint-disable-line no-console
   return withFormValue(...args);
 }
+
+export function Value(schema, value, onChange, params, errorList) {
+  console.warn('react-forms - Deprecation notice: Value(schema, value, onChange, params, errorList) has been refactored to createValue(options)'); // eslint-disable-line no-console
+  return createValue({ schema, value, onChange, params, errorList })
+}
