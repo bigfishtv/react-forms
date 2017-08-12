@@ -149,6 +149,15 @@ export class Value {
       return this;
     }
   }
+
+  updateExternalErrorList(externalErrorList, forceShowErrors = true) {
+    let nextRoot = this.createRoot({ externalErrorList, params: { forceShowErrors }});
+    if (!suppressUpdateContextual) {
+      this.root.onChange(nextRoot, nextRoot.keyPath);
+    }
+    return nextRoot;
+  }
+
 }
 
 applyDecorator(Value.prototype, 'errorList', memoize);
