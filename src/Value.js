@@ -183,6 +183,11 @@ class ValueRoot extends Value {
     return this;
   }
 
+  get _root() {
+    console.warn('react-forms - Deprecation notice: `_root` property has been renamed to `root`'); // eslint-disable-line no-console
+    return this;
+  }
+
   /**
    * Set schema.
    *
@@ -225,6 +230,11 @@ class ValueBranch extends Value {
         keyPath
       );
     }
+  }
+
+  get _root() {
+    console.warn('react-forms - Deprecation notice: `_root` property has been renamed to `root`'); // eslint-disable-line no-console
+    return this.root;
   }
 
 }
