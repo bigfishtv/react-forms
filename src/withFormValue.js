@@ -14,9 +14,11 @@ export default function withFormValue(Component) {
     static displayName = `WithFormValue(${displayName})`;
 
     render() {
+      // eslint-disable-next-line no-unused-vars
+      const { select, ...props } = this.props;
       return (
         <Component
-          {...this.props}
+          {...props}
           formValue={this.formValue}
           />
       );
