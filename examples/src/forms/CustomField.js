@@ -1,6 +1,6 @@
 import React from 'react';
 import {style} from 'react-stylesheet';
-import {Field as BaseField, ErrorList as BaseErrorList, Fieldset, createValue} from 'react-forms';
+import {Field as BaseField, ErrorList as BaseErrorList, Fieldset, createValue} from '@bigfishtv/react-forms';
 
 export default class CustomField extends React.Component {
   constructor(props) {

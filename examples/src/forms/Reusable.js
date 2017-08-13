@@ -1,5 +1,5 @@
 import React from 'react';
-import {Field, Fieldset, createValue} from 'react-forms';
+import {Field, Fieldset, createValue} from '@bigfishtv/react-forms';
 
 class IndividualFieldset extends Fieldset {
 

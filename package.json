@@ -1,8 +1,8 @@
 {
-  "name": "react-forms",
-  "version": "2.0.0-beta35",
+  "name": "@bigfishtv/react-forms",
+  "version": "2.0.0",
   "description": "Forms library for React",
-  "homepage": "http://prometheusresearch.github.io/react-forms/",
+  "homepage": "https://github.com/bigfishtv/react-forms",
   "main": "lib/index.js",
   "scripts": {
     "test": "make test-cov"
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/prometheusresearch/react-forms.git"
+    "url": "git://github.com/bigfishtv/react-forms.git"
   },
   "keywords": [
     "forms",
@@ -38,7 +38,7 @@
   "author": "Prometheus Research",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prometheusresearch/react-forms/issues"
+    "url": "https://github.com/bigfishtv/react-forms/issues"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0"

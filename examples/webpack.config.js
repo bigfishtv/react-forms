@@ -43,7 +43,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      'react-forms$': src,
+      '@bigfishtv/react-forms$': src,
     },
   },
 

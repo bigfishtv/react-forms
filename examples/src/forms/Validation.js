@@ -1,5 +1,5 @@
 import React from 'react';
-import {Fieldset, Field, createValue} from 'react-forms';
+import {Fieldset, Field, createValue} from '@bigfishtv/react-forms';
 
 export default class Validation extends React.Component {
   constructor(props) {

@@ -1,6 +1,9 @@
-# React Forms
+# React Forms (@bigfishtv fork)
 
-[![Travis build status](https://img.shields.io/travis/prometheusresearch/react-forms/develop.svg)](https://travis-ci.org/prometheusresearch/react-forms) [![Coverage](https://img.shields.io/coveralls/prometheusresearch/react-forms/develop.svg)](https://coveralls.io/github/prometheusresearch/react-forms)
+**Note: This fork of React Forms will be maintained to suit the internal projects of [bigfishtv](https://github.com/bigfishtv). At the moment
+there is feature parity with react-forms@2.0.0-beta35, with some changes to support React 15.5**
+
+---
 
 React Forms library provides a set of tools for [React][] to handle form
 rendering and validation.
@@ -29,7 +32,7 @@ rendering and validation.
 
 Install from npm:
 
-    % npm install react-forms@^2.0.0
+    % npm install @bigfishtv/react-forms
 
 You would probably also need a module bundler such as [Browserify][] or
 [Webpack][] as React Forms is distributed as a set of CommonJS modules.
@@ -50,7 +53,7 @@ state. Some might put form value in a Flux/Redux store instead.
 
 ```js
 import React from 'react'
-import {Fieldset, Field, createValue} from 'react-forms'
+import { Fieldset, Field, createValue } from '@bigfishtv/react-forms'
 
 class Form extends React.Component {
 
@@ -81,7 +84,7 @@ class Form extends React.Component {
 Then you can use `<Form />` component like any regular React component:
 
 ```js
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
 render(
   <Form value={{firstName: 'Michael', lastName: 'Jackson'}} />,
@@ -133,8 +136,8 @@ Customizing label rendering:
 
 ```js
 import React from 'react'
-import {style} from 'react-stylesheet'
-import {Field as BaseField, Label as BaseLabel} from 'react-forms'
+import { style } from 'react-stylesheet'
+import { Field as BaseField, Label as BaseLabel } from '@bigfishtv/react-forms'
 
 function Label({label, schema}) {
   return <BaseLabel className="my-label" label={label} schema={schema} />
@@ -149,8 +152,8 @@ Customizing error list rendering:
 
 ```js
 import React from 'react'
-import {style} from 'react-stylesheet'
-import {Field as BaseField, ErrorList as BaseErrorList} from 'react-forms'
+import { style } from 'react-stylesheet'
+import { Field as BaseField, ErrorList as BaseErrorList } from '@bigfishtv/react-forms'
 
 function ErrorList({formValue}) {
   return <BaseErrorList className="my-error-list" formValue={formValue} />
@@ -165,7 +168,7 @@ Form field with custom input component:
 
 ```js
 import React from 'react'
-import {Field} from 'react-forms'
+import { Field } from '@bigfishtv/react-forms'
 import Datepicker from 'datepicker'
 
 function DateField(props) {
@@ -177,7 +180,7 @@ Implementing form field component from scratch:
 
 ```js
 import React from 'react'
-import {withFormValue} from 'react-forms'
+import { withFormValue } from '@bigfishtv/react-forms'
 
 class Field extends React.Component {
 
@@ -201,7 +204,7 @@ Field = withFormValue(Field);
 
 ```js
 import React from 'react'
-import {Fieldset} from 'react-forms'
+import { Fieldset } from '@bigfishtv/react-forms'
 
 class IndividualFieldset extends React.Component {
 
