@@ -4,7 +4,7 @@
 
 import * as ReactForms from '../index';
 
-describe('react-forms', function() {
+describe('@bigfishtv/react-forms', function() {
 
   it('exports stable API', function() {
     assert(ReactForms.Fieldset);

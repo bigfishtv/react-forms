@@ -5,7 +5,7 @@
 import {object, array, string, number} from '../../Schema';
 import {create, select, update} from '../Value';
 
-describe('react-forms/reactive', function() {
+describe('@bigfishtv/react-forms/reactive', function() {
 
   describe('Value', function() {
     describe('create()', function() {
