@@ -3,6 +3,10 @@
 **Note: This fork of React Forms will be maintained to suit the internal projects of [bigfishtv](https://github.com/bigfishtv). At the moment
 there is feature parity with react-forms@2.0.0-beta35, with some changes to support React 15.5**
 
+Notable changes
+- Use PropTypes from 'prop-types' instead of React.PropTypes
+- `<Field />` uses empty string instead of null/undefined for `<input />` components to prevent React 15.4 warning about uncontrolled -> controlled inputs.
+- Prevent spreading unnecessary props on child components
 ---
 
 React Forms library provides a set of tools for [React][] to handle form
