@@ -1,5 +1,7 @@
 # React Forms (@bigfishtv fork)
 
+[![npm version](https://badge.fury.io/js/%40bigfishtv%2Freact-forms.svg)](https://badge.fury.io/js/%40bigfishtv%2Freact-forms)
+
 **Note: This fork of React Forms will be maintained to suit the internal projects of [bigfishtv](https://github.com/bigfishtv). At the moment
 there is feature parity with react-forms@2.0.0-beta35, with some changes to support React 15.5**
 
