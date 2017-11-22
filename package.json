@@ -12,6 +12,9 @@
   "babel": {
     "presets": [
       "prometheusresearch"
+    ],
+    "plugins": [
+      "transform-proto-to-assign"
     ]
   },
   "nyc": {
@@ -49,6 +52,7 @@
     "babel-cli": "^6.8.0",
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-proto-to-assign": "^6.26.0",
     "babel-preset-prometheusresearch": "^0.1.0",
     "coveralls": "^2.11.8",
     "doctoc": "^1.0.0",
