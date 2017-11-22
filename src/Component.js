@@ -24,7 +24,7 @@ let selectPropType = PropTypes.oneOfType([
  * It exposes form value via `this.formValue` which is provided either via
  * `this.props.formValue` or via context.
  */
-class Component extends React.Component {
+export default class Component extends React.Component {
 
   static propTypes = {
     /**
@@ -46,6 +46,9 @@ class Component extends React.Component {
      */
     selectFormValue: selectPropType
   };
+
+  static contextTypes = ContextTypes;
+  static childContextTypes = ContextTypes;
 
   getChildContext() {
     return {formValue: this.formValue};
@@ -74,9 +77,3 @@ class Component extends React.Component {
     return formValue;
   }
 }
-
-
-Component.contextTYpes = ContextTypes;
-Component.childContextTypes = ContextTypes;
-
-export default Component
