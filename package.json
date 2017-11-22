@@ -1,6 +1,6 @@
 {
   "name": "@bigfishtv/react-forms",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Forms library for React",
   "homepage": "https://github.com/bigfishtv/react-forms",
   "main": "lib/index.js",
