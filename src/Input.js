@@ -40,7 +40,7 @@ export default class Input extends React.Component {
     if (debounceEnabled) {
       value = this.state.value;
     }
-    if (Component === 'input' && (value === undefined || value === null)) {
+    if ((Component === 'input' || Component === 'textarea') && (value === undefined || value === null)) {
       value = '';
     }
     return (
