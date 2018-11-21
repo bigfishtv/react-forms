@@ -4,6 +4,9 @@
   "description": "Forms library for React",
   "homepage": "https://github.com/bigfishtv/react-forms",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+  ],
   "scripts": {
     "test": "make test-cov",
     "prepublish": "make clean && make",
