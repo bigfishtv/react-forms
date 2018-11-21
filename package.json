@@ -5,7 +5,7 @@
   "homepage": "https://github.com/bigfishtv/react-forms",
   "main": "lib/index.js",
   "files": [
-    "lib",
+    "lib"
   ],
   "scripts": {
     "test": "make test-cov",
